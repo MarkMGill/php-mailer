@@ -1,0 +1,16 @@
+[14-Aug-2020 09:45:25 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_transient() in /home/s60iy4gsxyco/public_html/deleteme.wpuqi3.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/s60iy4gsxyco/public_html/deleteme.wpuqi3.php on line 16
+[14-Aug-2020 09:45:25 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_transient() in /home/s60iy4gsxyco/public_html/deleteme.wpkkqc.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/s60iy4gsxyco/public_html/deleteme.wpkkqc.php on line 16
+[14-Aug-2020 09:45:25 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_transient() in /home/s60iy4gsxyco/public_html/deleteme.wpvqkx.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/s60iy4gsxyco/public_html/deleteme.wpvqkx.php on line 16
+[14-Aug-2020 09:45:26 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_transient() in /home/s60iy4gsxyco/public_html/deleteme.wpavoc.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/s60iy4gsxyco/public_html/deleteme.wpavoc.php on line 16
