@@ -1,39 +1,5 @@
 <?php
-    $msg = "";
-	use PHPMailer\PHPMailer\PHPMailer;
-	include_once "PHPMailer/PHPMailer.php";
-	include_once "PHPMailer/Exception.php";
-	include_once "PHPMailer/SMTP.php";
-
-	if (isset($_POST['submit'])) {
-		$name = $_POST['name'];
-      $phone = $_POST['phone'];
-      $email = $_POST['email'];
-		$message = $_POST['messager'];
-
-		$mail = new PHPMailer();
-
-		//if we want to send via SMTP
-		$mail->Host = "smtp.gmail.com";
-		$mail->isSMTP();
-		$mail->SMTPAuth = true;
-		$mail->Username = "markmgill@gmail.com";
-		$mail->Password = "";
-		$mail->SMTPSecure = "ssl"; //TLS
-		$mail->Port = 465; //587
-
-		$mail->addAddress('markmgill@yahoo.com');
-		$mail->setFrom($email);
-		$mail->Subject = 'Email message through Skyline';
-		$mail->isHTML(true);
-		$mail->Body = '<p>Name: ' . $name . '</p>' . '<p>Phone: ' . $phone . '</p>' . '<p>Email: ' . $email . '</p>' . '<p>Message: ' . $message . '</p>';
-
-		if ($mail->send())
-          $msg = "Your email has been sent, thank you!";
-          
-		else
-		    $msg = "Please try again!";
-	}
+   include 'sendEmail.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -139,7 +105,7 @@
                <div class="col-md-6 cont_theme_blog">
                   <div class="full">
                      <h3>INTRODUCTION</h3>
-                     <p>Skyline Services started back in 2013, dealing in Thermal Paper, Barcode Labels, Product Labels, Barcode Printers and POS System. Skyline Services has rapidly evolved over the years both vertically and horizontally and has now reached a stage where we have started the production.</p>
+                     <p>Skyline Services started back in 2013, dealing in Thermal Paper, Barcode Labels, Product Labels, Barcode Printers and POS System. Skyline Services has rapidly evolved over the years both vertically and horizontally and has now reached a stage where we have started the production.</p>
                   </div>
                </div>
                <!-- end featured cont -->
@@ -163,8 +129,8 @@
                <div class="col-md-6 cont_theme_blog " id="about-us">
                   <div class="full">
                      <h3>ABOUT US</h3>
-                     <p>Established in the year 2013 at Ahmedabad (Gujarat, India), we “Skyline Services” are engaged in manufacturing and supplying high quality Thermal Paper Rolls, 1ply & 2ply Paper Roll, ECG Roll, Industrial Paper Roll, Barcode Label, Direct Thermal Labels, Product Labels Roll and Thermal Transfer Ribbon etc. These products are manufactured using high grade raw material with the help of latest machinery under the supervision of skilled team of professionals. The raw material we use to manufacture these products is imported from South Korea, China and Europe. The offered Thermal Paper and Chromo labels are broadly demanded in the market due to their high strength, error-free printing and tear resistance, good adhesive properties and optimum finish.</p>
-                     <p>Skyline Services understands how important it is to get the best Products and Service for the Customer. We are dealing with Banking Sector, Semi Government Sector, Local Transport Service, Retail Sector and Hospital & Medical Sector. We make sure our customers are fully satisfied and comfortable with our Products and Services.</p>
+                     <p>Established in the year 2013 at Ahmedabad (Gujarat, India), we “Skyline Services” are engaged in manufacturing and supplying high quality Thermal Paper Rolls, 1ply & 2ply Paper Roll, ECG Roll, Industrial Paper Roll, Barcode Label, Direct Thermal Labels, Product Labels Roll and Thermal Transfer Ribbon etc. These products are manufactured using high grade raw material with the help of latest machinery under the supervision of skilled team of professionals. The raw material we use to manufacture these products is imported from South Korea, China and Europe. The offered Thermal Paper and Chromo labels are broadly demanded in the market due to their high strength, error-free printing and tear resistance, good adhesive properties and optimum finish.</p>
+                     <p>Skyline Services understands how important it is to get the best Products and Service for the Customer. We are dealing with Banking Sector, Semi Government Sector, Local Transport Service, Retail Sector and Hospital & Medical Sector. We make sure our customers are fully satisfied and comfortable with our Products and Services.</p>
                   </div>
                </div>
                <!-- end featured cont -->
